@@ -1,0 +1,87 @@
+:root{
+    --blanco: #ffffff;
+    --oscuro: #212121;
+    --primario: #ffc107;
+   /* --zafiro: #090766;*/
+    --zafiro: #000000;
+    --gris: #757575;
+
+    --fuente_principal: 3rem;
+    --comic_sans: "Comic Sans MS";
+}
+
+body{
+    font-family: var(--comic_sans);
+}
+h1{
+    text-align: center;
+    font-size: 3rem;
+    
+}
+#h2_desarrollador{
+    text-align: center;
+}
+span{
+    font-size: 30px;
+}
+#p_desarrollo_web{
+    
+    font-family: var(--comic_sans);
+}
+
+.nav_1{
+    width: 100%;
+   /* margin-top: 0px;
+    margin-right: auto;
+    margin-bottom: 0px;
+    margin-left: auto;*/
+    background-color: var(--zafiro);
+}
+.nav_1 div{
+   display: flex;
+   /*margin-left: 100px;
+    margin-right: 100px;*/
+    justify-content: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+    
+}
+.nav_1 a{
+   /* background-color: var(--primario);*/
+    color: var(--blanco);
+    text-decoration: none;
+    padding: 10px;
+}
+#ubi{
+    background-color: var(--primario);
+}
+
+.nav_1 div a:hover{ 
+    background-color: rgb(71, 10, 13);   
+}
+
+@media (min-width: 0px) and (max-width: 480px){
+    body{
+        background-color: red;
+    }
+    .nav_1 div{
+        display: flex;
+         flex-direction: column;    
+     }
+}
+@media (min-width: 481px) and (max-width: 1024px){
+    body{   
+        background-color: rgb(31, 189, 78);
+    }
+}
+
+@media (min-width: 1025px){
+    body{
+               background-color: rgb(89, 0, 255);
+    }
+}
+@media (min-width: 1281px){
+    body{   
+        background-color: rgb(28, 26, 161);
+    }
+}
